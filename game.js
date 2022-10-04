@@ -8,7 +8,7 @@ let bestScore= 0;
 let buttonColors= ["red", "blue", "green", "yellow"];
 
 function nextSequence () {
-
+  userClickedPattern= [];
   level++;
   $("#level-title").text("Level " + level);
   let randomNumber= Math.floor(Math.random() * 4);
@@ -76,6 +76,5 @@ function checkAnswer(currentLevel) {
 function startOver() {
     level= 0;
     gamePattern= [];
-    userClickedPattern= [];
     started= false;
   }
